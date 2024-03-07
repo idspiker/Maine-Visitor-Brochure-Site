@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>State of Maine - Augusta</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="augusta.html">Augusta</a>
+      <a class="nav-link" href="portland.html">Portland</a>
+      <a class="nav-link" href="bar-harbor.html">Bar Harbor</a>
+      <div id="nav-bottom-line"></div>
+    </nav>
+    <header class="city-header" id="augusta-header">
+      <div class="header-content city-header-content">
+        <div class="relative">
+          <img
+            src="./images/augusta-state-house.jpeg"
+            alt="Augusta state house"
+            id="city-header-image"
+          />
+          <p class="header-img-credit-augusta">Photograph by nowincolarado</p>
+        </div>
+        <div class="city-header-text">
+          <h1>Augusta</h1>
+          <h3>A Capital Opportunity</h3>
+          <p>
+            Augusta is the state capital of Maine. It boasts a beautiful
+            riverfront and a wealth of classic brick-built architecture. The
+            city is also home to landmarks and educational destinations, such as
+            Old Fort Western and the Maine State Museum. Between its importance
+            as state capital and its attractions, Augusta is well worth a visit.
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="light-fade-background">
+      <div class="section-content">
+        <aside class="city-stats">
+          <ul>
+            <li>18,899 Population <cite>[1]</cite></li>
+            <li>Incorporated in 1849 <cite>[2]</cite></li>
+            <li>Located in Kennebec County</li>
+            <li>Urban</li>
+            <li>
+              $45,006 Median Household Income <cite>[1]</cite> ($23,245 below
+              state avg.) <cite>[3]</cite>
+            </li>
+          </ul>
+        </aside>
+        <article>
+          <h2>Up from Humble Beginnings</h2>
+          <p>
+            A capital opportunity, indeed. Despite having a much lower
+            population and median household income than Portland, Augusta became
+            the new capital city of Maine in 1827 due to its prominent, central
+            location in the state <cite>[4]</cite>. The economy in Augusta is
+            strongly based around government and services, with 41.1% of jobs
+            being in the service sector and 20.9% being in government
+            <cite>[5]</cite>. These numbers make sense, with the city’s heavy
+            involvement in government as state capital.
+          </p>
+          <p>
+            Augusta has something to offer tourists, too. Fort Western has been
+            maintained to give visitors and locals alike a glimpse into the
+            area’s rich history, and the Maine State Museum offers even more
+            knowledge on Maine’s past. Augusta is worth visiting for anyone with
+            a love for knowledge and history.
+          </p>
+        </article>
+        <div class="works-cited">
+          <a
+            target="_blank"
+            href="https://data.census.gov/profile/Augusta_city,_Kennebec_County,_Maine?g=060XX00US2301102100"
+          >
+            [1] United States Census Bureau,
+            https://data.census.gov/profile/Augusta_city,_Kennebec_County,_Maine?g=060XX00US2301102100
+          </a>
+          <a
+            target="_blank"
+            href="https://www.augustamaine.gov/visitors/our_history/index.php"
+          >
+            [2] City of Augusta, "Our History",
+            https://www.augustamaine.gov/visitors/our_history/index.php
+          </a>
+          <a
+            target="_blank"
+            href="https://www.census.gov/quickfacts/fact/table/ME/HSG010222"
+          >
+            [3] United States Census Bureau (2022), "QuickFacts Maine",
+            https://www.census.gov/quickfacts/fact/table/ME/HSG010222
+          </a>
+          <a
+            target="_blank"
+            href="https://www.pressherald.com/2020/03/23/why-is-augusta-named-augusta-and-why-was-it-chosen-as-maines-capital/"
+          >
+            [4] Keith Edwards, "Why is Augusta Named Augusta, and Why was it
+            Chosen as Maine's Capital?", Portland Press Herald,
+            https://www.pressherald.com/2020/03/23/why-is-augusta-named-augusta-and-why-was-it-chosen-as-maines-capital/
+          </a>
+          <a
+            target="_blank"
+            href="https://www.augustamaine.gov/departments/development_services/economic_and_community_development/workforce_study.php#:~:text=As%20the%20capital%20region%2C%20the,concentration%20of%20health%20care%20employment."
+          >
+            [5] City of Augusta, "Workforce Study",
+            https://www.augustamaine.gov/departments/development_services/economic_and_community_development/workforce_study.php#:~:text=As%20the%20capital%20region%2C%20the,concentration%20of%20health%20care%20employment.
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="images-section">
+      <div class="section-content images-row">
+        <div class="image-wrapper">
+          <img
+            src="./images/augusta-waterfront.jpeg"
+            class="images-section-img"
+            alt="Augusta riverfront at dusk"
+          />
+          <p>Augusta riverfront at dusk</p>
+          <p class="image-credit">Photograph found on Maine Resource Guide</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/augusta-capital.jpeg"
+            class="images-section-img"
+            alt="The state capital building in Augusta"
+          />
+          <p>The state capital building in Augusta</p>
+          <p class="image-credit">Photograph by fantasyskyart</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/augusta-waterfront-day.webp"
+            class="images-section-img"
+            alt="Augusta riverfront during the day"
+          />
+          <p>Augusta riverfront during the day</p>
+          <p class="image-credit">Photograph found on Britannica</p>
+        </div>
+        <div>
+          <img />
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <footer>Thanks for visiting!</footer>
+    <script>
+      window.onscroll = () => {
+        const element = document.getElementById('nav');
+        const bottomLine = document.getElementById('nav-bottom-line');
+        if (window.scrollY != 0) {
+          element.style.backgroundColor = 'rgb(25, 25, 25)';
+          element.style.boxShadow =
+            '0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26)';
+          bottomLine.style.backgroundColor = 'transparent';
+        } else {
+          element.style.backgroundColor = 'transparent';
+          element.style.boxShadow = '0 0 0 0 transparent';
+          bottomLine.style.backgroundColor = 'white';
+        }
+      };
+    </script>
+  </body>
+</html>

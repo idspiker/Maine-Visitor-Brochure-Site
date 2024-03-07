@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>State of Maine - Portland</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="augusta.html">Augusta</a>
+      <a class="nav-link" href="portland.html">Portland</a>
+      <a class="nav-link" href="bar-harbor.html">Bar Harbor</a>
+      <div id="nav-bottom-line"></div>
+    </nav>
+    <header class="city-header" id="portland-header">
+      <div class="header-content city-header-content">
+        <div class="relative">
+          <img
+            src="./images/portland-header.jpeg"
+            alt="A snowy street in Portland"
+            id="city-header-image"
+          />
+          <p class="header-img-credit-portland">
+            Photograph found on Harvard Magazine
+          </p>
+        </div>
+        <div class="city-header-text">
+          <h1>Portland</h1>
+          <h3>Yes. Life's Good Here</h3>
+          <p>
+            If you want to explore charming streets and an exciting waterfront,
+            Portland is the place for you. The streets are lined with every kind
+            of shop and restaurant you can imagine, and the waterfront is home
+            to many storied docks and boats. Indulge in your adventurous side at
+            every turn.
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="light-fade-background">
+      <div class="section-content">
+        <aside class="city-stats">
+          <ul>
+            <li>68,408 Population <cite>[1]</cite></li>
+            <li>Incorporated in 1832 <cite>[2]</cite></li>
+            <li>Located in Cumberland County</li>
+            <li>Urban</li>
+            <li>
+              $69,046 Median Household Income <cite>[1]</cite> ($796 above state
+              avg.) <cite>[3]</cite>
+            </li>
+          </ul>
+        </aside>
+        <article>
+          <h2>Charming Even in Success</h2>
+          <p>
+            Portland was actually the first capital of Maine when it was
+            established in 1832 <cite>[2]</cite>. Despite no longer being the
+            capital of the state, the city is still a wonderful city. Downtown
+            is bustling with life and culture, and despite the size of the city
+            it still has a distinct charm.
+          </p>
+          <p>
+            Portland provides plenty of economic opportunity for the businesses
+            that line its streets. The city has a strong tourism economy, with
+            tourists spending over $8.6 billion in 2022 <cite>[4]</cite>. The
+            influx of visitors and money from outside the city allows businesses
+            to make far more than they would if they were only meeting the needs
+            of the locals.
+          </p>
+          <p>
+            There is a lot to see in Portland. The bustling waterfront provides
+            sight-seeing and exploration on its many docks. Events such as the
+            Maine Lobster Festival and Yarmouth Clam Festival are held yearly in
+            the city, giving locals and visitors alike even more to do
+            <cite>[5]</cite>.
+          </p>
+        </article>
+        <div class="works-cited">
+          <a
+            target="_blank"
+            href="https://data.census.gov/profile/Portland_city,_Maine?g=160XX00US2360545"
+            >[1] United States Census Bureau,
+            https://data.census.gov/profile/Portland_city,_Maine?g=160XX00US2360545</a
+          >
+          <a
+            target="_blank"
+            href="https://www.achp.gov/preserve-america/community/portland-maine#:~:text=In%201775%20British%20Naval%20ships,as%20a%20city%20in%201832."
+            >[2] Advisory Council on Historic Preservation, "Portland, Maine",
+            https://www.achp.gov/preserve-america/community/portland-maine#:~:text=In%201775%20British%20Naval%20ships,as%20a%20city%20in%201832.</a
+          >
+          <a
+            target="_blank"
+            href="https://www.census.gov/quickfacts/fact/table/ME/HSG010222"
+          >
+            [3] United States Census Bureau (2022), "QuickFacts Maine",
+            https://www.census.gov/quickfacts/fact/table/ME/HSG010222
+          </a>
+          <a
+            target="_blank"
+            href="https://www.visitportland.com/partners/partnership-support/industry-research-statistics/"
+          >
+            [4] Visit Portland Maine, "Tourism Research + Statistics",
+            https://www.visitportland.com/partners/partnership-support/industry-research-statistics/
+          </a>
+          <a
+            target="_blank"
+            href="https://www.visitportland.com/blog/2020/03/20/fairs-festivals/"
+          >
+            [5] Visit Portland Maine, "Must Do Fairs + Festivals",
+            https://www.visitportland.com/blog/2020/03/20/fairs-festivals/
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="images-section">
+      <div class="section-content images-row">
+        <div class="image-wrapper">
+          <img
+            src="./images/portland-port.jpeg"
+            class="images-section-img"
+            alt="Boats on the docks of Portland"
+          />
+          <p>Boats docked in Portland</p>
+          <p class="image-credit">Photograph found on timeout.com</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/portland-cathedral-maine.webp"
+            class="images-section-img"
+            alt="Overhead view of Portland"
+          />
+          <p>Overhead view of Portland, Maine</p>
+          <p class="image-credit">Photograph found on Norwegian Cruise Line</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/portland-traps.jpg"
+            class="images-section-img"
+            alt="A view off of one of Portland's docks"
+          />
+          <p>Seagulls and docks near the waterfront</p>
+          <p class="image-credit">Photograph by Ian Spiker</p>
+        </div>
+        <div>
+          <img />
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <footer>Thanks for visiting!</footer>
+    <script>
+      window.onscroll = () => {
+        const element = document.getElementById('nav');
+        const bottomLine = document.getElementById('nav-bottom-line');
+        if (window.scrollY != 0) {
+          element.style.backgroundColor = 'rgb(25, 25, 25)';
+          element.style.boxShadow =
+            '0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26)';
+          bottomLine.style.backgroundColor = 'transparent';
+        } else {
+          element.style.backgroundColor = 'transparent';
+          element.style.boxShadow = '0 0 0 0 transparent';
+          bottomLine.style.backgroundColor = 'white';
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,721 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(25, 25, 25);
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6.854rem;
+  margin: 1.618rem 0;
+  font-weight: 100;
+  letter-spacing: 0.46rem;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.618rem;
+  font-weight: 100;
+  letter-spacing: 0.18rem;
+  margin: 0 0 2.618rem 0;
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.618rem;
+  font-weight: 100;
+  letter-spacing: 0.14rem;
+}
+
+h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+h5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.618rem;
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  transition: background-color 0.25s, box-shadow 0.25s;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+}
+
+aside li {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.236rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  height: 5rem;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 2rem;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgb(25, 25, 25);
+  box-shadow: inset 0 -0.95rem 0 0 rgba(0, 0, 0, 0.109);
+  background-color: transparent;
+  transition: box-shadow 0.25s cubic-bezier(0.68, 0.51, 0, 1.45);
+}
+
+input:hover {
+  box-shadow: inset 0 -2rem 0 0 rgba(0, 0, 0, 0.109);
+}
+
+input:focus {
+  box-shadow: inset 0 -2rem 0 0 rgba(155, 172, 255, 0.317);
+  outline: none;
+}
+
+textarea {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgb(25, 25, 25);
+  background-color: transparent;
+  box-shadow: inset 0 -6.5rem 0 0 rgba(0, 0, 0, 0.109);
+  resize: none;
+  height: 7rem;
+  padding-top: 0.8em;
+  transition: box-shadow 0.25s cubic-bezier(0.68, 0.51, 0, 1.45);
+}
+
+textarea:hover {
+  box-shadow: inset 0 -7.5rem 0 0 rgba(0, 0, 0, 0.109);
+}
+
+textarea:focus {
+  box-shadow: inset 0 -7.5rem 0 0 rgba(155, 172, 255, 0.317);
+  outline: none;
+}
+
+label {
+  color: rgb(136, 136, 136);
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+}
+
+header p {
+  max-width: 40rem;
+  color: white;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+header h3 {
+  color: white;
+  margin: 0 0 2rem 0;
+}
+
+button {
+  border: none;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.16rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  cursor: pointer;
+  transition: box-shadow 0.25s, background-color 0.45s;
+}
+
+button:hover {
+  box-shadow: inset 0 -0.1rem 0.5rem 1rem rgb(84, 84, 84);
+  background-color: rgb(84, 84, 84);
+}
+
+button:disabled {
+  background-color: rgb(123, 123, 123);
+}
+
+button:disabled:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+cite {
+  font-size: 0.618rem;
+}
+
+table {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.455);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.496);
+  padding: 1rem;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.455);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 1rem;
+}
+
+#nav-bottom-line {
+  position: fixed;
+  width: 86vw;
+  height: 1px;
+  top: 3.5rem;
+  background-color: white;
+  transition: background-color 0.25s;
+}
+
+#home-header {
+  background-color: rgb(25, 25, 25);
+  padding: 11.5rem 0 8rem 0;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.315),
+      rgba(0, 0, 0, 0.459),
+      rgba(0, 0, 0, 0.906)
+    ),
+    url('./images/maine_scenery.JPG');
+  background-size: cover;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#fun-facts {
+  float: right;
+  width: 40%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.431);
+  background-image: url(./images/coast_scenery.JPG);
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding: 2.5rem 2rem;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#state-parks {
+  background-color: rgba(0, 0, 0, 0.462);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.315),
+      rgba(0, 0, 0, 0.459),
+      rgba(0, 0, 0, 0.906)
+    ),
+    url('./images/mountain_scenery.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#first-name-cell {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#last-name-cell {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#email-cell {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+#confirm-email-cell {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+#question-cell {
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+
+#contact-form-header {
+  max-width: 19rem;
+  position: relative;
+}
+
+#boat-img {
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  top: 12rem;
+  left: 2.6rem;
+  transform: rotate(-2deg);
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+  z-index: 10;
+}
+
+#fence-img {
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  top: 12rem;
+  left: 1rem;
+  transform: rotate(-10deg);
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#coast-image {
+  width: 16rem;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#coast-image-wrapper {
+  background-color: rgba(210, 224, 219, 0.908);
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.765),
+    rgba(0, 0, 0, 0.105)
+  );
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: rgb(25, 25, 25);
+  text-align: center;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+  transform: rotate(2deg);
+  z-index: 0;
+  height: fit-content;
+  width: fit-content;
+}
+
+#coast-image-wrapper p {
+  max-width: 16rem;
+}
+
+#city-header-image {
+  grid-column: 1;
+  grid-row: 1;
+  width: 34rem;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+#bar-harbor-header {
+  background-color: rgb(18, 41, 56);
+}
+
+#images-section {
+  background-color: rgb(18, 41, 56);
+}
+
+#augusta-header {
+  background-color: rgb(18, 41, 56);
+}
+
+#portland-header {
+  background-color: rgb(18, 41, 56);
+}
+
+.images-section-img {
+  width: 20rem;
+  max-width: 90vw;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+.relative {
+  position: relative;
+}
+
+.image-wrapper {
+  color: white;
+  text-align: center;
+}
+
+.image-credit {
+  font-size: 0.618rem;
+  color: rgba(255, 255, 255, 0.665);
+}
+
+.city-header {
+  background-color: rgb(25, 25, 25);
+  padding: 15rem 0 5rem 0;
+  height: 12rem;
+  box-shadow: 0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26);
+}
+
+.city-header-content {
+  display: grid;
+  gap: 4rem;
+}
+
+.city-header-text {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.nav-link {
+  text-decoration: underline 1px transparent;
+  text-underline-offset: 0;
+  transition: text-decoration-color 0.25s ease-in-out,
+    text-underline-offset 0.25s ease-in-out, letter-spacing 0.25s ease-in-out,
+    font-weight 0.25s ease-in-out, text-decoration-thickness 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: underline 2px white;
+  text-underline-offset: 0.25em;
+  letter-spacing: 0.05rem;
+  font-weight: 900;
+}
+
+.section-content {
+  width: 90vw;
+  max-width: 70rem;
+}
+
+.header-content {
+  width: 90vw;
+  max-width: 90rem;
+}
+
+.form-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, fill);
+  gap: 2rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.parks-row {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.images-row {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.light-fade-background {
+  background-image: linear-gradient(white, rgba(0, 0, 0, 0.105));
+}
+
+.top-margin {
+  margin-top: 2rem;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.city-stats {
+  float: right;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.8rem 0.5rem 0;
+  border-left: 1px solid rgba(25, 25, 25, 0.321);
+  box-shadow: inset 2.25rem 0 0 0 rgba(0, 0, 0, 0.054);
+  transition: box-shadow 0.25s cubic-bezier(0.68, 0.51, 0.22, 0.96);
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.city-stats li {
+  max-width: 18rem;
+}
+
+.city-stats:hover {
+  box-shadow: inset 23rem 0 0 0 rgba(0, 0, 0, 0.054);
+}
+
+.header-img-credit-augusta {
+  position: absolute;
+  top: 25rem;
+  font-size: 0.618rem;
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.header-img-credit-portland {
+  position: absolute;
+  top: 24.25rem;
+  font-size: 0.618rem;
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.works-cited {
+  font-size: 0.618rem;
+  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.works-cited a {
+  color: rgba(0, 0, 0, 0.37);
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.light-transparent-text {
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.light-transparent-text a {
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.s-margin-top {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1309px) {
+  #city-header-image {
+    width: 26rem;
+  }
+
+  .city-header {
+    padding: 15rem 0 10rem 0;
+  }
+
+  .header-img-credit-augusta {
+    top: 19rem;
+    color: rgba(255, 255, 255, 0.37);
+  }
+
+  .header-img-credit-portland {
+    top: 18.25rem;
+    color: rgba(255, 255, 255, 0.37);
+  }
+}
+
+@media screen and (max-width: 1214px) {
+  .images-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+  #city-header-image {
+    display: none;
+  }
+
+  #bar-harbor-header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.315),
+        rgba(0, 0, 0, 0.459),
+        rgba(0, 0, 0, 0.906)
+      ),
+      url('./images/bar_harbor_boat.JPG');
+    background-size: cover;
+  }
+
+  #augusta-header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.315),
+        rgba(0, 0, 0, 0.459),
+        rgba(0, 0, 0, 0.906)
+      ),
+      url('./images/augusta-state-house.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #portland-header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.315),
+        rgba(0, 0, 0, 0.459),
+        rgba(0, 0, 0, 0.906)
+      ),
+      url('./images/portland-header.jpeg');
+    background-size: cover;
+  }
+
+  .city-header-text {
+    grid-column: 1;
+  }
+
+  .header-img-credit-augusta {
+    top: 0rem;
+    color: rgba(255, 255, 255, 0.37);
+  }
+
+  .header-img-credit-portland {
+    top: 0rem;
+    color: rgba(255, 255, 255, 0.37);
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .parks-row {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #boat-img {
+    display: none;
+  }
+
+  #fence-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .city-stats {
+    width: 90vw;
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    border-left: none;
+    border-bottom: 1px solid rgba(25, 25, 25, 0.321);
+    box-shadow: inset 0 -1.3rem 0 0 rgba(0, 0, 0, 0.054);
+  }
+
+  .city-stats:hover {
+    box-shadow: inset 0 -14.5rem 0 0 rgba(0, 0, 0, 0.054);
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  #fun-facts {
+    width: fit-content;
+    float: none;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .hide-on-xsmall {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  #first-name-cell {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  #last-name-cell {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  #email-cell {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  #confirm-email-cell {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+
+  #question-cell {
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  #coast-image {
+    width: 14rem;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>State of Maine - Bar Harbor</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="augusta.html">Augusta</a>
+      <a class="nav-link" href="portland.html">Portland</a>
+      <a class="nav-link" href="bar-harbor.html">Bar Harbor</a>
+      <div id="nav-bottom-line"></div>
+    </nav>
+    <header class="city-header" id="bar-harbor-header">
+      <div class="header-content city-header-content">
+        <img
+          src="./images/bar_harbor_boat.JPG"
+          alt="Bar Harbor's Bay"
+          id="city-header-image"
+        />
+        <div class="city-header-text">
+          <h1>Bar Harbor</h1>
+          <h3>Ba Ha Ba</h3>
+          <p>
+            Bar Harbor is a hot tourist destination, boasting everything from
+            quaint shops to atmospheric pubs. It also borders on Acadia National
+            Park, offering peaceful enjoyment to those who wish to escape the
+            hubbub of the crowds. Whether you are a hiker or a shopper, this
+            place is for you!
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="light-fade-background">
+      <div class="section-content">
+        <aside class="city-stats">
+          <ul>
+            <li>5,089 Population <cite>[1]</cite></li>
+            <li>Incorporated in 1796 <cite>[2]</cite></li>
+            <li>Located in Hancock County</li>
+            <li>Urban</li>
+            <li>
+              $67,045 Median Household Income <cite>[1]</cite> ($1,206 below
+              state avg.) <cite>[3]</cite>
+            </li>
+          </ul>
+        </aside>
+        <article>
+          <h2>What About Bar Harbor?</h2>
+          <p>
+            Bar Harbor’s notoriety as a summer retreat began early in its
+            history. In the 1800s, people were already building summer cottages
+            and hotels to host guests seeking out the beauty of the mountains
+            and coasts <cite>[2]</cite>. Even now, almost two centuries later,
+            the allure of the mountains brings many visitors to this resort
+            town. In the summer and fall the tourist scene booms. Local
+            businesses and restaurants make the bulk of their profit in the
+            summer while cruise ships pour hundreds of visitors into Bar Harbor
+            each day. You can buy anything from bar harbor souvenirs to fresh
+            caught lobster at the height of the season.
+          </p>
+          <p>
+            The town empties out in the winter. Without the tourists to do
+            business with, many shops close for the off season. As many people
+            only live and work in Bar Harbor in the summer, the population also
+            drops significantly in the winter. In the tourist season, the town’s
+            population is over 18,000, but during the winter it is only around
+            5,000 <cite>[4]</cite>.
+          </p>
+        </article>
+        <div class="works-cited">
+          <a
+            target="_blank"
+            href="https://data.census.gov/profile/Bar_Harbor_town,_Hancock_County,_Maine?g=060XX00US2300902865"
+            >[1] United States Census Bureau,
+            https://data.census.gov/profile/Bar_Harbor_town,_Hancock_County,_Maine?g=060XX00US2300902865</a
+          >
+          <a
+            target="_blank"
+            href="https://barharborhistorical.org/town-history/"
+            >[2] Bar Harbor Historical Society, "Town History",
+            https://barharborhistorical.org/town-history/</a
+          >
+          <a
+            target="_blank"
+            href="https://www.census.gov/quickfacts/fact/table/ME/HSG010222"
+          >
+            [3] United States Census Bureau (2022), "QuickFacts Maine",
+            https://www.census.gov/quickfacts/fact/table/ME/HSG010222
+          </a>
+          <a
+            target="_blank"
+            href="https://energynews.us/2021/08/30/what-climate-action-looks-like-in-a-small-island-tourist-town-in-maine/"
+            >[4] Energy News Network (2021), "What Climate Action Looks Like in
+            a Small, Island Tourist Town in Maine",
+            https://energynews.us/2021/08/30/what-climate-action-looks-like-in-a-small-island-tourist-town-in-maine/</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="images-section">
+      <div class="section-content images-row">
+        <div class="image-wrapper">
+          <img
+            src="./images/bar-harbor-moose.jpeg"
+            class="images-section-img"
+            alt="A street in Bar Harbor lighted up at night"
+          />
+          <p>Bar Harbor street of shops at night</p>
+          <p class="image-credit">Photograph by Benjamin Williamson</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/bar-harbor-shops.jpeg"
+            class="images-section-img"
+            alt="A street in Bar Harbor is bustling in the day time"
+          />
+          <p>A busy day of shopping in Bar Harbor</p>
+          <p class="image-credit">Photograph by dconvertini</p>
+        </div>
+        <div class="image-wrapper">
+          <img
+            src="./images/bar-harbor-bikes.jpeg"
+            class="images-section-img"
+            alt="Bikers are riding on a trail that weaves through the mountains"
+          />
+          <p>Bike outing in Acadia National Park</p>
+          <p class="image-credit">Photograph by Tara Rice</p>
+        </div>
+        <div>
+          <img />
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <footer>Thanks for visiting!</footer>
+    <script>
+      window.onscroll = () => {
+        const element = document.getElementById('nav');
+        const bottomLine = document.getElementById('nav-bottom-line');
+        if (window.scrollY != 0) {
+          element.style.backgroundColor = 'rgb(25, 25, 25)';
+          element.style.boxShadow =
+            '0 0.12rem 0.5rem 0.15rem rgba(25, 25, 25, 0.26)';
+          bottomLine.style.backgroundColor = 'transparent';
+        } else {
+          element.style.backgroundColor = 'transparent';
+          element.style.boxShadow = '0 0 0 0 transparent';
+          bottomLine.style.backgroundColor = 'white';
+        }
+      };
+    </script>
+  </body>
+</html>
